@@ -763,3 +763,65 @@ img {
     bottom: -3rem;
   }
 }
+
+/* Mobile-only fallback: hide the SVG blob and show the portrait as a centered, cover background
+   This avoids editing `index.html` while preventing the small-top-left image issue on phones. */
+@media screen and (max-width: 767px) {
+  .home__img svg {
+    display: none;
+  }
+
+  .home__img {
+    /* show the portrait as a cover background inside the same container */
+    background-image: url("../img/Topimg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 220px;
+    height: 220px;
+    margin-top: 1rem;
+    align-self: center;
+    pointer-events: none;
+    border-radius: 999px; /* gentle rounded crop similar to blob */
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  }
+}
+
+/* Mobile: stack hero content and move profile image below text to avoid overlap */
+@media screen and (max-width: 767px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3.5rem 0 2rem;
+    row-gap: 0.75rem;
+  }
+
+  .home__data {
+    order: 1;
+    z-index: 2;
+  }
+
+  .home__social {
+    order: 2;
+    margin-top: 0.5rem;
+    z-index: 2;
+  }
+
+  .home__img {
+    position: relative;
+    order: 3;
+    right: auto;
+    bottom: auto;
+    width: 220px;
+    margin-top: 1.25rem;
+    align-self: center;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .home__blob-img {
+    width: 260px;
+    max-width: 100%;
+  }
+}
