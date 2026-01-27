@@ -503,7 +503,7 @@ img {
 .flip-card {
   perspective: 1000px;
   height: 450px;
-  width: 350px;
+  width: 100%;
   border-radius: 0.5rem;
   outline: none;
 }
