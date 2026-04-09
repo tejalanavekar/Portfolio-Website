@@ -87,8 +87,8 @@
                     <div>
                         <!-- <h2 class="about__subtitle">I'm Tejal</h2> -->
                         <p class="about__text">I am a Computer Science graduate student at USC with a strong focus on Artificial Intelligence Machine Learning and Software Development. I enjoy exploring cutting-edge frameworks, models, and real-world applications that push the boundaries of intelligent systems. With hands-on experience in data engineering, scalable systems, and AI-driven solutions, I aim to create impactful technologies that solve complex challenges.</p>
-                        <p class="about__text">Previously, I worked as a Data Engineer Intern at Meta (Reality Labs), where I built scalable data pipelines and AI readiness dashboards, and as a Software Developer at USC’s Institute for Creative Technologies, where I automated workflows and developed real-time financial dashboards. These experiences strengthened my ability to design solutions that are both innovative and impactful. . I strongly believe in building technology that solves real-world problems at scale and brings measurable impact to users.</p>
-                        <p class="about__text">I am always open to new opportunities, collaborations, and conversations—feel free to view my resume and connect with me directly. Let’s build something meaningful together!</p>
+                        <p class="about__text">Previously, I worked as a Data Engineer Intern at Meta (Reality Labs), where I built scalable data pipelines and AI readiness dashboards, and as a Software Developer at USC’s Institute for Creative Technologies, where I automated workflows and developed real-time financial dashboards. These experiences strengthened my ability to design solutions that are both innovative and impactful. I strongly believe in building technology that solves real-world problems at scale and brings measurable impact to users.</p>
+                        <p class="about__text">I am always open to new opportunities, collaborations, and conversations feel free to view my resume and connect with me directly. Let’s build something meaningful together!</p>
 
                         <div class="about__buttons">
                         <a href="assets/resume/Tejal_Resume_Final.pdf" target="_blank" rel="noopener" class="button">
@@ -115,7 +115,7 @@
             <p class="education__degree">M.S. in Computer Science </p>
             
             <p class="education__courses">
-                <strong>Relevant courses:</strong> Analysis of Algorithm, Database management, Applied Natural Language Processing,  Information Retrieval,Deep Learning, Geospatial Information Management, 
+                <strong>Relevant courses:</strong> Analysis of Algorithm, Database management, Applied Natural Language Processing,  Information Retrieval, Geospatial Information Management
             </p>
             </div>
 
@@ -126,8 +126,7 @@
             <p class="education__degree">B.E. in Information Technology</p>
             
             <p class="education__courses">
-                 <strong>Relevant courses:</strong> Operating Systems, Computer Networks, Machine Learning, Artificial Intelligence, Data Science, Data
-                 Mining, Big Data
+                 <strong>Relevant courses:</strong> Operating Systems, Computer Networks, Artificial Intelligence, Big Data, Cloud Computing
             </p>
             </div>
         </div>
@@ -150,10 +149,9 @@
                      <h3 class="flip-card__title">Data Engineer Intern</h3>
                 
                 <ul class="work__ul">
-                <li>Engineered 4 end-to-end scalable data pipelines on the Reality Labs Privacy and Platform Foundations team,
-                enabling real-time analytics and AI readiness dashboards </li>
-                <li>Automated pipeline generation and data validation using Python and Meta internal tools</li>
-                <li>Optimized AI readiness metrics, adopted by 3+ cross-functional teams</li>
+                <li> Developed 4 production-grade distributed data pipelines on Meta infra, processing billions of records/day for petabyte-scale real-time analytics </li>
+                <li>Engineered Python validation frameworks ensuring schema integrity, null-safety, idempotency & fault-tolerant recovery across DAG pipelines</li>
+                <li>Optimized DAG workflows via query planning & parallelism, driving adoption across 3+ cross-functional teams</li>
             </ul>
             </div>
             </div>
@@ -168,10 +166,11 @@
             <div class="flip-card__face flip-card__back">
             <h3 class="flip-card__title">Software Developer</h3>
             <ul class="work__ul">
-            <li> Developed ICT internal web pages using C# Razor Pages, replicating reference UI designs, and used C# Entity Framework
-Core to generate Excel reports from production data deployed to live environments.</li>
-            <li>  Debugged and resolved cross-service frontend–backend failures using JavaScript, improving production system reliability.</li>
-            <li>Designed interactive Power BI dashboards with real-time data integration for financial KPIs</li>
+            <li> Built scalable internal platforms using C# ASP.NET Core Razor Pages, integrating Minimal APIs for efficient service-to-UI data flow</li>
+            <li> Designed normalized SQL Server schemas with FK constraints + stored procedures; leveraged EF Core & LINQ for dynamic rendering and automated reporting</li>
+            <li> Deployed real-time KPI dashboards using EF Core aggregation queries with low-latency pipelines in production </li>
+
+
           </ul>
             </div>
         </div>
@@ -187,9 +186,9 @@ Core to generate Excel reports from production data deployed to live environment
             <h3 class="flip-card__title">AI Engineer Intern</h3>
          
           <ul class="work__ul">
-            <li>Applied image segmentation and SIFT-based feature extraction for improved data interpretation and boosting the classification precision</li>
-            <li>Trained and deployed CNN models (ResNet, VGG) to automate image classification tasks</li>
-            <li>Built modular preprocessing pipelines to standardize images across diverse datasets</li>
+            <li>Built CV pipelines with SIFT-based feature extraction, improving classification precision by 25% over CNN baselines</li>
+            <li>Fine-tuned & deployed ResNet-50 and VGG variants, reducing inference latency by 30% in high-throughput systems</li>
+            <li>Designed modular preprocessing pipelines (normalization, histogram equalization, brightness calibration) for robust, standardized multi-source data ingestion</li>
           </ul>
         </div>
         </div>
@@ -211,13 +210,29 @@ Core to generate Excel reports from production data deployed to live environment
                 </button>
                 <div class="project-card__content" hidden>
                 <p class="project-card__desc">
-                 Built a production-ready MERN-based expense management platform featuring secure RESTful APIs, optimized MongoDB schemas, and AI-driven financial insights. 
-                 Designed an interactive, real-time analytics dashboard with monthly spending trends and category-level segmentation, enabling users to track budgets smarter and improve financial decision-making efficiency by 35%.
+                 Architected a modular full-stack MERN application with service-layer separation (decoupling REST API services, business logic, and UI components) enabling scalable request handling; implemented secure authentication using JWT with bcrypt hashing and optimized session management via Redis caching and integrated LangChain-powered LLM pipelines to deliver AI-driven financial insights, improving response accuracy by 25%
                 </p>
                 <ul class="project-card__tags">
-                <li class="tag">MERN</li><li class="tag">LangChain</li>
+                <li class="tag">MERN</li><li class="tag">LangChain</li><li class="tag">REST API</li>
                 </ul>
                      
+            </div>
+            </article>
+
+            <article class="project-card" data-project>
+                <button class="project-card__summary" type="button" aria-expanded="false">
+                <span> Gene Semantic Bridge </span>
+                <i class='bx bx-plus'></i>
+                </button>
+                <div class="project-card__content" hidden>
+                <p class="project-card__desc">
+                Designed KA-CVAE (Conditional VAE) in PyTorch by integrating BioBERT embeddings to model unseen CRISPR perturbations with a 128-dimensional latent space capturing both single and combinatorial perturbations, and evaluated the performance on Norman scRNA-seq OOD benchmarks, achieving an R² of 0.996 and outperforming baseline generative models
+                </p>
+                <ul class="project-card__tags">
+                <li class="tag">Pytorch</li><li class="tag">CVAE</li><li class="tag">BioBERT</li><li class="tag">scRNA-seq</li><li class="tag">Generative Modeling</li>
+                </ul>
+                
+                
             </div>
             </article>
                 <article class="project-card" data-project>
@@ -227,9 +242,7 @@ Core to generate Excel reports from production data deployed to live environment
                 </button>
                 <div class="project-card__content" hidden>
                 <p class="project-card__desc">
-                 Led the development of a custom seq2seq model combining BERT encoders and LSTM decoders with schema-aware
-                attention for translating natural language questions to SQL queries. Achieved 91.8% execution accuracy and 82.2% exact
-                match on Spider dataset
+                 Implemented a seq2seq architecture with a fine-tuned BERT encoder and attention-based LSTM decoder over relational schemas, enhancing schema-aware cross-attention across database metadata to improve multi-table query generation and syntactic validity, achieving 91.8% execution accuracy and 82.2% exact match on the Spider dataset
                 </p>
                 <ul class="project-card__tags">
                 <li class="tag">NLP</li><li class="tag">BERT</li><li class="tag">LSTM</li><li class="tag">Pytorch</li>
@@ -249,9 +262,7 @@ Core to generate Excel reports from production data deployed to live environment
                 </button>
                 <div class="project-card__content" hidden>
                 <p class="project-card__desc">
-                 Built and deployed a cross-platform weather app with modular frontend–backend architecture (React.js, Node.js,
-                MongoDB), hosted on Google Cloud. Integrated Google and Tomorrow.io APIs for geolocation ,weather prediction and
-                daily forecasts, achieving 93% location accuracy and increasing daily retention by 35%
+                 Architected a microservices-based system decoupling geolocation, weather, and user services into independently deployable modules, deployed containerized APIs on GCP Cloud with autoscaling achieving 93% location accuracy and 35% higher user retention, while integrating geolocation and weather REST APIs with caching for low-latency real-time and daily forecast delivery
                 </p>
                 <ul class="project-card__tags">
                 <li class="tag">MERN Stack </li><li class="tag">Flask</li><li class="tag">Swift</li><li class="tag">GCP</li>
@@ -266,27 +277,7 @@ Core to generate Excel reports from production data deployed to live environment
                 
             </div>
             </article>
-
-                <article class="project-card" data-project>
-                <button class="project-card__summary" type="button" aria-expanded="false">
-                <span> Smart Surveillance System for Intrusion Detection </span>
-                <i class='bx bx-plus'></i>
-                </button>
-                <div class="project-card__content" hidden>
-                <p class="project-card__desc">
-                Devised and Implemented AI-powered smart surveillance system utilizing SSD and YOLO algorithms for real-time leopard
-                detection across 500 meters, achieving 92% detection accuracy with false positive reduction of 30% 
-                </p>
-                <ul class="project-card__tags">
-                <li class="tag">SSD</li><li class="tag">YOLO</li><li class="tag">Open CV</li><li class="tag">Tensorflow</li>
-                </ul>
-                <div class="paper__button">
-                <a href="assets/researchPaper/paper.pdf" target="_blank" rel="noopener" class="button">Research Paper</a>
-                
-            </div>
-            </article>
-
-                
+      
             </div> 
             </section>
 
