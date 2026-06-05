@@ -284,6 +284,33 @@ img {
   max-width: 800px;
   margin-top: 3rem;
 }
+
+.about__interests{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem auto 2rem auto;
+  max-width: 800px;
+  padding: 0;
+}
+
+.about__interests li{
+  background-color: rgba(62, 111, 244, 0.1);
+  color: var(--second-color);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  border: 1px solid rgba(62, 111, 244, 0.3);
+  transition: all 0.3s ease;
+}
+
+.about__interests li:hover{
+  background-color: rgba(62, 111, 244, 0.2);
+  border-color: var(--first-color);
+}
+
 /* .about__img {
   justify-self: center;
 } */
