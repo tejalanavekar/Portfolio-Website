@@ -493,7 +493,9 @@ img {
 }
 .paper__button{
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  gap: 1rem;
   max-width: 900px;
   margin-top: 2.5rem;
   margin-left: 3.4rem;
